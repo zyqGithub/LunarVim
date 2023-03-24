@@ -53,7 +53,12 @@ local core_plugins = {
     cmd = "Telescope",
     enabled = lvim.builtin.telescope.active,
   },
-  { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true, enabled = lvim.builtin.telescope.active },
+  { "nvim-telescope/telescope-live-grep-args.nvim", commit="9f62ecc6f6282e65adedaa3a0f18daea05664e64", lazy = true, enabled = lvim.builtin.telescope.active },
+  { "nvim-telescope/telescope-ui-select.nvim", lazy = true, enabled = lvim.builtin.telescope.active },
+  { "nvim-telescope/telescope-rg.nvim", lazy = true, enabled = lvim.builtin.telescope.active },
+  { "snvim-telescope/telescope-dap.nvim", lazy = true, enabled = lvim.builtin.telescope.active },
+  { "nvim-telescope/telescope-fzf-native.nvim", lazy = true, enabled = lvim.builtin.telescope.active },
+  
   -- Install nvim-cmp, and buffer source as a dependency
   {
     "hrsh7th/nvim-cmp",

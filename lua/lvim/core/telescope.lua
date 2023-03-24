@@ -140,6 +140,12 @@ function M.setup()
     lvim.builtin.telescope.on_config_done(telescope)
   end
 
+  pcall(function()
+    require("telescope").load_extension "ui-select"
+    require("telescope").load_extension "dap"
+    require("telescope").load_extension "live_grep_args"
+  end)
+
   if lvim.builtin.telescope.extensions and lvim.builtin.telescope.extensions.fzf then
     pcall(function()
       require("telescope").load_extension "fzf"

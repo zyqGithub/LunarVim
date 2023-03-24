@@ -6,7 +6,7 @@ function M.config()
     active = true,
     on_config_done = nil,
     setup = {
-      auto_reload_on_write = false,
+      auto_reload_on_write = true,
       disable_netrw = false,
       hijack_cursor = false,
       hijack_netrw = true,
