@@ -112,6 +112,16 @@ M.config = function()
       },
       ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
       ["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
+
+      ["<leader>"] = {
+        name = "Leader",
+        w = { "<cmd>HopWord<cr>", "HopWord" },
+        j = { "<cmd>HopLine<cr>", "HopLine" },
+        k = { "<cmd>HopLine<cr>", "HopLine" },
+        s = { "<cmd>HopChar1<cr>", "HopChar1" },
+
+      },
+
       b = {
         name = "Buffers",
         j = { "<cmd>BufferLinePick<cr>", "Jump" },

@@ -324,6 +324,18 @@ local core_plugins = {
     enabled = lvim.builtin.indentlines.active,
   },
 
+  -- hop
+  {
+    "phaazon/hop.nvim", -- like easymotion, but more powerful
+    branch = "v1", -- optional but strongly recommended
+    config = function()
+      require("lvim.core.hop").setup()
+    end,
+    cmd = "Hop",
+    event = "VeryLazy",
+    enabled = lvim.builtin.hop.active,    
+  },  
+
   {
     "lunarvim/onedarker.nvim",
     branch = "freeze",
