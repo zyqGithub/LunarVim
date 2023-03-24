@@ -341,6 +341,22 @@ local core_plugins = {
     enabled = lvim.builtin.hop.active,    
   },  
 
+  -- nvim-spectre 搜索替换功能插件 search and replace
+  {
+    "nvim-pack/nvim-spectre",
+    config = function()
+      require("lvim.core.nvim-spectre").setup()
+    end,
+    cmd = "Hop",
+    event = "VeryLazy",
+    enabled = lvim.builtin.hop.active,    
+  },  
+
+  -- Mofiqul/vscode.nvim vscode主题
+  {
+    "Mofiqul/vscode.nvim",   
+  },  
+
   {
     "lunarvim/onedarker.nvim",
     branch = "freeze",

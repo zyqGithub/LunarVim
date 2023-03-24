@@ -166,6 +166,15 @@ M.config = function()
         q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
         U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
       },
+
+      -- nvim-spectre 快捷键映射
+      R = {
+        name = "Replace",
+        f = { "<cmd>lua require('spectre').open_file_search()<CR>", "Replace File" },
+        p = { "<cmd>lua require('spectre').open()<CR>", "Replace Project" },
+        s = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search" },
+      },
+
       p = {
         name = "Plugins",
         i = { "<cmd>Lazy install<cr>", "Install" },

@@ -14,6 +14,7 @@ local builtins = {
   "lvim.core.illuminate",
   "lvim.core.indentlines",
   "lvim.core.hop",
+  "lvim.core.nvim-spectre",
   "lvim.core.breadcrumbs",
   "lvim.core.project",
   "lvim.core.bufferline",
