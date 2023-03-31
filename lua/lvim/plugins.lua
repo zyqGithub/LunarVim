@@ -375,6 +375,17 @@ local core_plugins = {
     enabled = lvim.builtin.auto_save.active,    
   }, 
 
+   -- local history 不依赖git的文件修改历史
+  {
+    "dinhhuy258/vim-local-history",
+    branch = 'master', 
+    config = function()
+      require("lvim.core.vim-local-history").setup()
+    end,
+    enabled = lvim.builtin.vim_local_history.active,  
+    cmd = "LocalHistoryToggle"
+  }, 
+
   {
     "lunarvim/onedarker.nvim",
     branch = "freeze",

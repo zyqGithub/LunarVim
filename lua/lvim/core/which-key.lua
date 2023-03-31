@@ -148,6 +148,10 @@ M.config = function()
           "<cmd>BufferLineSortByExtension<cr>",
           "Sort by language",
         },
+        o = {
+          "<cmd>LocalHistoryToggle<cr>",
+          "local history",
+        },
       },
       d = {
         name = "Debug",

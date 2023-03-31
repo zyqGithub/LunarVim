@@ -17,6 +17,7 @@ local builtins = {
   "lvim.core.nvim-spectre",
   "lvim.core.autosave",
   "lvim.core.tabular",
+  "lvim.core.vim-local-history",
   "lvim.core.breadcrumbs",
   "lvim.core.project",
   "lvim.core.bufferline",
