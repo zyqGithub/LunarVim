@@ -3,7 +3,7 @@ local M = {}
 
 -- 不同的路径下的历史文件都放在家目录下
 vim.cmd [[
-    let g:local_history_path = '~/.local-history'
+    let g:local_history_path = '/home/zyq/.local-history'
 ]]
 
 function M.config()
