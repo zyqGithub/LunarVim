@@ -15,6 +15,8 @@ local builtins = {
   "lvim.core.indentlines",
   "lvim.core.hop",
   "lvim.core.nvim-spectre",
+  "lvim.core.autosave",
+  "lvim.core.tabular",
   "lvim.core.breadcrumbs",
   "lvim.core.project",
   "lvim.core.bufferline",

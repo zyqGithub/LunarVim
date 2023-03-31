@@ -44,7 +44,7 @@ local core_plugins = {
   -- Telescope
   {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
+    branch = "0.1.1",
     config = function()
       require("lvim.core.telescope").setup()
     end,
@@ -356,6 +356,24 @@ local core_plugins = {
   {
     "Mofiqul/vscode.nvim",   
   },  
+
+  -- auto-save 自动保存文件更改
+  {
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("lvim.core.autosave").setup()
+    end,
+    enabled = lvim.builtin.auto_save.active,    
+  }, 
+
+  -- tabularize 实现文本列对齐
+  {
+    "godlygeek/tabular",
+    config = function()
+      require("lvim.core.tabular").setup()
+    end,
+    enabled = lvim.builtin.auto_save.active,    
+  }, 
 
   {
     "lunarvim/onedarker.nvim",

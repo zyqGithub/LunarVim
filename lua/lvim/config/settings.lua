@@ -25,13 +25,13 @@ M.load_default_options = function()
     ignorecase = true, -- ignore case in search patterns
     mouse = "a", -- allow the mouse to be used in neovim
     pumheight = 10, -- pop up menu height
-    showmode = false, -- we don't need to see things like -- INSERT -- anymore
+    showmode = true, -- we don't need to see things like -- INSERT -- anymore 用来控制状态栏是否显示 INSERT/NORM等状态
     smartcase = true, -- smart case
     splitbelow = true, -- force all horizontal splits to go below current window
     splitright = true, -- force all vertical splits to go to the right of current window
     swapfile = false, -- creates a swapfile
     termguicolors = true, -- set term gui colors (most terminals support this)
-    timeoutlen = 1000, -- time to wait for a mapped sequence to complete (in milliseconds)
+    timeoutlen = 500, -- time to wait for a mapped sequence to complete (in milliseconds)
     title = true, -- set the title of window to the value of the titlestring
     -- opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
     undodir = undodir, -- set an undo directory
@@ -39,8 +39,8 @@ M.load_default_options = function()
     updatetime = 100, -- faster completion
     writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
     expandtab = true, -- convert tabs to spaces
-    shiftwidth = 2, -- the number of spaces inserted for each indentation
-    tabstop = 2, -- insert 2 spaces for a tab
+    shiftwidth = 4, -- the number of spaces inserted for each indentation
+    tabstop = 4, -- insert 2 spaces for a tab
     cursorline = true, -- highlight the current line
     number = true, -- set numbered lines
     numberwidth = 4, -- set number column width to 2 {default 4}
@@ -52,6 +52,7 @@ M.load_default_options = function()
     showcmd = false,
     ruler = false,
     laststatus = 3,
+    colorcolumn = "120", -- 120字符处加竖线
   }
 
   ---  SETTINGS  ---

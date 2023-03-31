@@ -1,7 +1,8 @@
 return {
   leader = "space",
   reload_config_on_save = true,
-  colorscheme = "lunar",
+  -- colorscheme = "lunar",
+  colorscheme = "vscode",
   transparent_window = false,
   format_on_save = {
     ---@usage boolean: format on save (Default: false)
