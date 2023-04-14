@@ -116,11 +116,14 @@ M.config = function()
 
       ["<leader>"] = {
         name = "Leader",
-        w = { "<cmd>HopWord<cr>", "HopWord" },
-        j = { "<cmd>HopLine<cr>", "HopLine" },
+
+      },
+
+      ["j"] = {
+        name = "hop jump",
+        j = { "<cmd>HopWord<cr>", "HopWord" },
         k = { "<cmd>HopLine<cr>", "HopLine" },
         s = { "<cmd>HopChar1<cr>", "HopChar1" },
-
       },
 
       b = {

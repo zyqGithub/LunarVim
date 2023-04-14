@@ -18,6 +18,7 @@ local builtins = {
   "lvim.core.autosave",
   "lvim.core.tabular",
   "lvim.core.vim-local-history",
+  "lvim.core.markdown-preview",
   "lvim.core.breadcrumbs",
   "lvim.core.project",
   "lvim.core.bufferline",

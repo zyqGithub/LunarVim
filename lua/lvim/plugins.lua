@@ -301,6 +301,7 @@ local core_plugins = {
       "ToggleTermSendVisualLines",
       "ToggleTermSendVisualSelection",
     },
+    event = "VimEnter",
     keys = lvim.builtin.terminal.open_mapping,
     enabled = lvim.builtin.terminal.active,
   },
@@ -347,15 +348,36 @@ local core_plugins = {
     config = function()
       require("lvim.core.nvim-spectre").setup()
     end,
-    cmd = "Hop",
+    -- cmd = "Hop",
     event = "VeryLazy",
-    enabled = lvim.builtin.hop.active,    
+    enabled = lvim.builtin.nvim_spectre.active,    
   },  
 
   -- Mofiqul/vscode.nvim vscode主题
   {
     "Mofiqul/vscode.nvim",   
   },  
+
+  -- markdown-preview
+  -- 使用方法：在 markdown文件中，执行 :MarkdownPreview命令，就可以打开浏览器进行markdown预览
+  
+  -- 如果安装完执行 :MarkdownPreview不起作用，则需要手动安装一下：
+  -- cd /home/zyq/.local/share/lunarvim/site/pack/lazy/opt/markdown-preview.nvim/app
+  -- yarn install
+  -- 如果报错，
+  -- 需要先安装 yarn
+  -- sudo apt remove cmdtest
+  -- sudo apt remove yarn
+  -- sudo npm install -g yarn
+  -- 然后再yarn install
+  {
+    "iamcco/markdown-preview.nvim",
+    -- config = function()
+    --   require("lvim.core.markdown-preview").setup()
+    -- end,
+    event = "VimEnter",
+    enabled = lvim.builtin.markdown_preview.active,    
+  }, 
 
   -- auto-save 自动保存文件更改
   {
@@ -369,10 +391,10 @@ local core_plugins = {
   -- tabularize 实现文本列对齐
   {
     "godlygeek/tabular",
-    config = function()
-      require("lvim.core.tabular").setup()
-    end,
-    enabled = lvim.builtin.auto_save.active,    
+    -- config = function()
+    --   require("lvim.core.tabular").setup()
+    -- end,
+    enabled = lvim.builtin.tabular.active,    
   }, 
 
    -- local history 不依赖git的文件修改历史
