@@ -408,13 +408,16 @@ local core_plugins = {
     cmd = "LocalHistoryToggle"
   }, 
 
+  -- 用法： :colorscheme onedarker
   {
     "lunarvim/onedarker.nvim",
     branch = "freeze",
     config = function()
       pcall(function()
         if lvim and lvim.colorscheme == "onedarker" then
-          require("onedarker").setup()
+          require("onedarker").setup() {
+              style = 'warmer'
+          }
           lvim.builtin.lualine.options.theme = "onedarker"
         end
       end)
