@@ -33,6 +33,9 @@ function M.config()
         "--hidden",
         "--glob=!.git/",
       },
+
+      file_ignore_patterns = {},
+
       ---@usage Mappings are fully customizable. Many familiar mapping patterns are setup as defaults.
       mappings = {
         i = {

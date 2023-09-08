@@ -114,10 +114,8 @@ M.config = function()
       ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
       ["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
 
-      ["<leader>"] = {
-        name = "Leader",
-
-      },
+      -- 使用两个leader键启动hopword
+      ["<leader>"] = { "<cmd>HopWord<cr>", "HopWord" },
 
       ["j"] = {
         name = "hop jump",

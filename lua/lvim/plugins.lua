@@ -301,7 +301,7 @@ local core_plugins = {
       "ToggleTermSendVisualLines",
       "ToggleTermSendVisualSelection",
     },
-    event = "VimEnter",
+    event = "VeryLazy",
     keys = lvim.builtin.terminal.open_mapping,
     enabled = lvim.builtin.terminal.active,
   },
